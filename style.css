@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --primaria: #032C6E;
+    --secundaria: #5E5E5E;
+    --terciaria: #ACACAC;
+    --cordefundo: #EEEDF5;
+}
+body{
+    background-color: #eedfee;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+
+}
+#equipe{
+    text-align: center;
+    padding: 60px 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto
+
+}
+.tituloprincipal{
+    font-size: 34px;
+    color: var(--primaria);
+}
+.paragrafoprincipal{
+    font-size: 24px;
+    color: var(--secundaria);
+    margin: 60px 0 40px 0;
+}
+.card-group{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 3%;
+    
+}
+.card{
+    background-color: #fff;
+    border-radius: 8%;
+    padding: 30px;
+    margin: 5px;
+    flex-direction: column;
+    
+
+}
+
+.card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.587);
+    border-bottom: 10px solid var(--primaria);
+}
+.card img{
+    clip-path: circle();
+    color: var();
+    height: 100px;
+    object-fit: contain;
+
+    
+
+}
+.card h3{
+    font-size: 21px;
+    margin: 20px 0 10px 0;
+
+
+}
+.card h2{
+    font-size: 28px;
+    color: var(--secundaria);
+}
+.card p{
+    font-size: 14px;
+    margin: 10px 0 30px 0;
+}
+
+.card a{
+    text-decoration: none;
+    background-color: var(--cordefundo);
+    color: var(--secundaria);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-weight: bold;
+    
+}
+
+.card a:hover{
+    background-color: var(--primaria);
+    color: white;
+    transition: 0.3s;
+}
+
+.card-group:hover > :not(:hover){
+    opacity: 50%;
+    transform: scale(0.95);
+}
